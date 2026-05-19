@@ -1,20 +1,35 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 🚨 Infinity911Evidence — Production README
 
-# Run and deploy your AI Studio app
+Infinity911Evidence is a real‑world evidence, verification, and documentation system designed for integrity, transparency, and chain‑of‑custody reliability.  
+This repository contains the full local‑run environment and deployment workflow for the Infinity911Evidence application.
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/c64db18a-5737-4754-8231-00a4c092853a
+## 📌 Purpose
 
-## Run Locally
+Infinity911Evidence provides a structured, tamper‑resistant environment for:
 
-**Prerequisites:**  Node.js
+- Capturing evidence  
+- Storing structured records  
+- Running local analysis  
+- Preparing export‑ready documentation  
+- Maintaining verifiable audit trails  
 
+The system is built for **real‑world use**, not simulation.
+
+---
+
+## 🛠 Requirements
+
+- Node.js (LTS recommended)  
+- npm  
+- A valid API key for your chosen model provider  
+- Optional: Hosting provider (Vercel, Netlify, Firebase Hosting, or your own server)
+
+---
+
+## ▶️ Run Locally
 
 1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+   ```bash
+   npm install
