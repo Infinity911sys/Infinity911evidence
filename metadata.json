@@ -1,0 +1,13 @@
+{
+  "name": "INFINITY NATIONAL SECURITY: Intelligence Evidence Decoder™",
+  "description": "Enterprise-grade national security evidence decoder. Features Strategic Intelligence (STRATINT), Signal Intelligence (SIGINT), and Austin Turbo-Core™ Forensic Synthesis. Certified for Federal Evidence Protocols. © 2024 Infinity911 Systems.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "Forensic audio analysis",
+    "Legal report generation",
+    "Evidence stamping",
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
