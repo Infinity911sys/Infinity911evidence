@@ -1,0 +1,78 @@
+{
+  "schema_version": "2.0",
+  "project": {
+    "name": "Preservation Evidence Lab",
+    "owner": "Austin Enterprise LLC",
+    "previous_names": ["RECKONING Evidence Lab", "Infinity911 Evidence Decoder"],
+    "repository_reference": "https://github.com/Infinity911sys/Infinity911evidence",
+    "repository_verified": false
+  },
+  "rules": {
+    "original_evidence": {
+      "immutable": true,
+      "never_overwrite": true,
+      "store_original_bytes": true,
+      "hash_algorithm": "SHA-256",
+      "verify_hash_on_import_and_export": true,
+      "derivatives": "Store edits, excerpts, enhancements and transcripts separately with links to originals."
+    },
+    "chain_of_custody": {
+      "append_only_audit_log": true,
+      "record_fields": ["event_id", "utc_timestamp", "actor", "action", "source_hash", "output_hash", "reason"],
+      "tamper_evident": true,
+      "no_silent_deletion": true
+    },
+    "search": {
+      "ai_assisted": true,
+      "exact_terms": true,
+      "names": true,
+      "references": true,
+      "alternate_spellings": true,
+      "contextual_matches": true,
+      "results_must_link_to_source": true,
+      "distinguish_ai_inference_from_source_text": true
+    },
+    "media": {
+      "audio_video_playback": true,
+      "transcription": "optional; mark machine-generated and review status",
+      "audio_enhancement": "derivative copies only",
+      "clip_creation": "derivative copies only; retain timestamps and source references"
+    },
+    "imports": {
+      "chatgpt_export": "user-provided exports only; detect actual available transcripts and media files",
+      "other_platforms": "modular user-authorized connectors; no assumption of universal access",
+      "never_claim_missing_audio_exists": true
+    },
+    "legal": {
+      "state_selector": "US states and District of Columbia",
+      "default_state": "Arizona",
+      "law_check": "Show jurisdiction, source, last reviewed date and limitations; require current verification before relying on advice",
+      "recording_consent": "Evaluate participation, location, reasonable expectation of privacy and applicable federal/state law; incidental capture is fact-dependent",
+      "no_unauthorized_interception": true
+    },
+    "editions": {
+      "personal": "privacy-first and law-compliant permissions",
+      "commercial": "role-based access and compliance controls",
+      "government": {
+        "label": "AUTHORIZED USE ONLY",
+        "separate_from_public_editions": true,
+        "role_based_access": true,
+        "authorization_required": true,
+        "no_bypass_of_consent_warrant_or_privacy_law": true
+      }
+    },
+    "security": {
+      "encryption_at_rest": true,
+      "encryption_in_transit": true,
+      "least_privilege": true,
+      "export_requires_explicit_user_action": true,
+      "sensitive_data_minimization": true
+    },
+    "development": {
+      "preserve_existing_work": true,
+      "modular_extensions": true,
+      "tests_required_before_claiming_functionality": true,
+      "do_not_claim_deployment_without_verification": true
+    }
+  }
+}
